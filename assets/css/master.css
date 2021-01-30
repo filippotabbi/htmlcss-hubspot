@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* UTILITY */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.col_50 {
+  width:50%;
+  height: 100%;
+}
+
+/* HEADER STYLE */
+  /* TOP STYLE */
+.row_sources {
+width: 100vw;
+height: 10vh;
+background-color: #f4f9fd;
+border-bottom: 1px solid black;
+}
+.lang {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.contattaci{
+vertical-align: middle;
+}
+.sources_right {
+  float: right;
+}
+.login{
+  background-color: white;
+  color: #fe775a;
+  border: 2px solid #fe775a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+.get_hub {
+  background-color: #fe775a;
+  color: white;
+  border: 2px solid #fe775a;
+  padding: 5px 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.fa-search{
+  color: #47becf
+}
+
+ /* NAV BAR STYLE */
+.row.nav{
+  width: 100vw;
+  height: 10vh;
+}
+
+.nav_bar_right{
+  float: right;
+}
+
+.nav_bar > a{
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+/* MAIN STYLE */
+  /* JUMBO */
+.row_jumbo {
+  margin-top: 3vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("..//img/jumbotron.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat ;
+}
+.text_jumbo{
+  padding-top: 35px;
+}
+.title_jumbo {
+  font-size: 55px;
+}
+.descr_title {
+  margin: 20px auto 0 auto;
+  font-size: 18px;
+}
+.bt_ghf {
+  background-color: #fe775a;
+  color: white;
+  border: 2px solid #fe775a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin: 30px 0;
+}
