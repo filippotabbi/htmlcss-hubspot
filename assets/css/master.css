@@ -75,12 +75,13 @@ section:after{
   /* TOP STYLE */
 .row_sources {
 width: 100vw;
-height: 10vh;
+height: 100%;
 background-color: #f4f9fd;
 border-bottom: 1px solid black;
 }
 .nav_sources {
 padding-top: 20px;
+padding-bottom: 20px;
 }
 .lang {
   border-right: 1px solid grey;
