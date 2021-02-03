@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   overflow-x: hidden;
@@ -10,8 +13,8 @@ body {
 /* UTILITY */
 .container {
   width: 80%;
+  height: 100%;
   margin: 0 auto;
-  padding-top: 20px;
 }
 .col_50 {
   width:50%;
@@ -19,9 +22,9 @@ body {
   position: relative;
   float: left;
 }
-.col_70 {
-  width: 60vw ;
-  height: 35vh;
+.row_60 {
+  width: 60% ;
+  height: 100%;
   margin: 50px auto;
   background-color: #ffffff;
   position: relative;
@@ -38,11 +41,16 @@ body {
   border: 20px solid #fe775a;
   padding: 5px 10px;
   border-radius: 5px;
-  margin: 20px;
-  position: relative;
-  left: 50%;
-  transform: translate( -50%, 0);
+  float: right 50%;
+  width: 50%;
+  margin: 20px auto;
+  vertical-align: middle;
+  text-align: center;
+}
 
+.btn_pos{
+  vertical-align: middle;
+  text-align: center;
 }
 .bt_orange_col_70 {
   background-color: #fe775a;
@@ -50,8 +58,9 @@ body {
   border: 20px solid #fe775a;
   padding: 5px 10px;
   border-radius: 5px;
-  position: absolute;
-  bottom: 0;
+  margin: 20px auto;
+  width: 30%;
+  text-align: center;
 }
 .fa-check-circle{
   color: #fe775a;
@@ -70,11 +79,14 @@ height: 10vh;
 background-color: #f4f9fd;
 border-bottom: 1px solid black;
 }
+.nav_sources {
+padding-top: 20px;
+}
 .lang {
   border-right: 1px solid grey;
   padding-right: 10px;
+  margin-top: 3vh;
   margin-right: 10px;
-  vertical-align: middle;
 }
 .contattaci{
 vertical-align: middle;
@@ -107,10 +119,15 @@ vertical-align: middle;
 .row.nav{
   width: 100%;
   height: 100%;
-}
 
+}
+.logo_header{
+  position: relative;
+  top: 10px;
+}
 .nav_bar_right{
   float: right;
+  padding-top: 20px;
 }
 
 .nav_bar > a{
@@ -155,8 +172,9 @@ vertical-align: middle;
  /* PRIMA SEZIONE */
  .bg_section_1 {
    width: 100%;
-   height: 210vh;
+   height: 100%;
    background-color: #f4f9fd;
+   position: relative;
  }
 
  .cube{
@@ -172,77 +190,18 @@ vertical-align: middle;
 
 .text_area_section_1{
   text-align: center;
-  margin: 20px auto;
+  margin: auto;
   width: 50%;
   line-height: 25px;
 }
 
 .descr_cube{
-  margin-top: 25px;
+  margin-top: 25px ;
+  padding-bottom: 50px;
 }
 
-.text_col_70 {
-  width: 50%;
-  float: left;
-  text-align: left;
-  margin-top: 20px;
-  position: relative;
-  top: 50px;
-  right: 100px;
 
-}
-#hrleft{
-  width: 60%;
-  display: inline-block;
-  margin-left: 20px;
-}
 
-#book {
-  width: 100px;
-  margin-top: 20%;
-  position: relative;
-  left: 35%;
-  transform: translate( -50% , -50% );
-  }
-
-#buble {
-  width: 80px;
-  margin-top: 30%;
-  position: relative;
-  left: 50%;
-  transform: translate( -50% , -50% );
-}
-
-#table{
-  width: 80px;
-  margin-top: 30%;
-  position: relative;
-  left: 50%;
-  transform: translate( -50% , -50% );
-}
-#office{
-  margin-top: 50%;
-  position: relative;
-  left: 50%;
-  transform: translate( -50% , -50% );
-}
-
-.col_20 {
-  width: calc(100% / 3);
-
-  background-color: #ffffff;
-  float: left;
-  vertical-align: middle;
-  display: inline;
-  position: relative;
-  padding-left: 20px;
-  border: 10px solid #f4f9fd;
-}
-.img_svg_col {
-  width: 100px;
-  margin: 20px auto;
-  position: relative;
-}
 
 .card-title, .card-text, .card-sep{
   text-align: center;
@@ -266,26 +225,105 @@ vertical-align: middle;
 .checked {
   margin: 0 10%;
 }
-.inline {
-  display: inline;
+.col_img_sx {
+width: 86%;
+background-color: #ffffff;
+margin: 0 auto;
+border-radius: 10px;
+  border: 1px solid lightgrey;
 }
-#inline_block {
-  margin: 30px 0;
+.img_sx{
+  width: 50%;
   display: inline-block;
 }
+.text_dx{
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+.title_text_dx {
+  margin: 30px 0;
+}
+#pop_dx{
+  display: inline-block;
+}
+#hrleft {
+  display: inline-block;
+}
+.inline{
+  display: inline-block;
+}
+.col33{
+  width: calc( 80% / 3 );
+  background-color: #ffffff;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+.buble_col {
+  margin-left: 7%;
+  float: left;
+  position: relative;
+  margin-right: 40px;
+  border: 1px solid lightgrey;
+}
 
+.office_col {
+  float: left;
+  position: relative;
+  margin-right: 40px;
+    border: 1px solid lightgrey;
+}
+
+.table_col{
+float: left;
+position: relative;
+  border: 1px solid lightgrey;
+}
+
+#book {
+  height: 150px;
+  margin: 10%  auto;
+  position: relative;
+  left: 25%;
+  padding: 10px;
+}
+#office {
+  height: 150px;
+  position: relative;
+  left: 25%;
+  padding: 10px;
+}
+#table {
+  height: 150px;
+  position: relative;
+  left: 25%;
+  padding: 10px;
+}
+#buble {
+  height: 150px;
+  position: relative;
+  left: 25%;
+  padding: 10px;
+}
+
+.col33:after {
+  display: table;
+  content: "";
+  clear: both;
+}
 
 /* GRAFICO LEARN AND GROW */
 .bg_learn_grow {
   width: 100%;
   height: 100%;
-  background-color: #00bba7;
+  background-image:  linear-gradient(45deg, #00A4BC, #00BDA5);
 }
 .grid_title {
   width: 80%;
   font-size: 35px;
   color: #ffffff;
-  margin: 30px auto;
+  margin: auto;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -297,7 +335,8 @@ vertical-align: middle;
 }
 .row_graphic{
   width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 50px auto;
+
   text-align: center;
 }
 .cell-counter{
@@ -308,6 +347,7 @@ vertical-align: middle;
 }
 .cell-desc{
   color: white;
+  margin-bottom: 30px;
 }
 .cell {
   display: inline;
@@ -398,6 +438,10 @@ font-size: 20px;
   background-color: #32495b;
 }
 
+.footer_ul {
+  line-height: 30px;
+}
+
 .row_footer{
   display: inline-block;
 }
@@ -406,10 +450,10 @@ font-size: 20px;
   list-style: none;
   display: inline-block;
   color: #ffffff;
-  vertical-align: middle;
-  padding: 60px;
-  margin: 0 auto 50px auto;
+  margin: 30px 50px 50px 50px;
+  vertical-align: text-top;
 }
+
 .social_logo{
   list-style: none;
   display: inline;
@@ -447,24 +491,23 @@ a{
 
 #footer_hr
 {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .socket-text{
   float: right;
 }
 .socket-logo{
-  background-color: white;
+
 }
 
 .legal_stuff{
   margin-right: 20px;
 }
-.btn_contact{
+#btn_contact{
   color: black;
   background-color: #ffffff;
   border: 2px solid black;
   border-radius: 5px;
-  color: black;
   padding: 12px 15px;
 }
